@@ -2,35 +2,83 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<title>一日一膳</title>
-<meta name="keywords" content="ページのキーワードA,B,C">
-<meta name="description" content="ページの説明">
+<title>一日一膳 - 日記と備忘録</title>
+<meta name="keywords" content="日記,備忘録,アプリ開発,アイデア,日々の記録">
+<meta name="description" content="日々の出来事やアプリ開発のアイデアを記録するブログ">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div id="outer">
-<header><h1>一日一膳</h1>
+<header>
+<h1>一日一膳</h1>
 <p>日記やら備忘録やら</p>
+<nav>
+<a href="index.html">ホーム</a>
+<a href="diary.html">日記一覧</a>
+<a href="ideas.html">アプリ案</a>
+<a href="about.html">About</a>
+</nav>
 </header>
+
 <div id="content">
-<div class="inner"><h2>記事ページ見出し・大</h2>
-<p>文章あれこれ</p>
-<h3>記事ページ見出し・中</h3>
-<p>文章あれこれ</p>
-<h4>記事ページ見出し・小</h4>
-<p>文章あれこれ</p>
+<!-- 最新の日記エントリー -->
+<div class="inner">
+<article class="entry">
+<h2><a href="posts/2026-01-04-diary.html">2026年1月4日の日記</a></h2>
+<p class="date">2026年1月4日（土）</p>
+<p class="category">📝 日記</p>
+<p>今日からブログを始めた。GitHubで無料でホスティングできるのは便利だと思う。シンプルなHTMLで作っているので、更新も簡単そう...</p>
+<a href="posts/2026-01-04-diary.html" class="read-more">続きを読む →</a>
+</article>
+
+<!-- アプリアイデアのエントリー -->
+<article class="entry idea">
+<h2><a href="posts/2026-01-04-app-idea-todo.html">シンプルなTodoアプリのアイデア</a></h2>
+<p class="date">2026年1月4日（土）</p>
+<p class="category">💡 アプリ案</p>
+<p>タスク管理アプリは色々あるけど、もっとシンプルで直感的なものを作りたい。主な機能：タスクの追加・完了・削除、カテゴリ分け、期限設定...</p>
+<a href="posts/2026-01-04-app-idea-todo.html" class="read-more">続きを読む →</a>
+</article>
+
+<article class="entry">
+<h2><a href="posts/2026-01-03-diary.html">2026年1月3日の日記</a></h2>
+<p class="date">2026年1月3日（金）</p>
+<p class="category">📝 日記</p>
+<p>正月休みも終わりに近づいてきた。今年はもっとアウトプットを増やしたいと思っているので、このブログで記録を残していこう...</p>
+<a href="posts/2026-01-03-diary.html" class="read-more">続きを読む →</a>
+</article>
 </div>
 </div>
+
 <aside>
-<div class="right-title">サイドバータイトル</div>
+<div class="right-title">カテゴリー</div>
 <div class="link">
 <ul>
-<li>記事ページへのリンク</li>
-<li>記事ページへのリンク</li>
+<li><a href="diary.html">📝 日記</a></li>
+<li><a href="ideas.html">💡 アプリ案</a></li>
+<li><a href="tech.html">💻 技術メモ</a></li>
+</ul>
+</div>
+
+<div class="right-title">最近の投稿</div>
+<div class="link">
+<ul>
+<li><a href="posts/2026-01-04-diary.html">1月4日の日記</a></li>
+<li><a href="posts/2026-01-04-app-idea-todo.html">Todoアプリ案</a></li>
+<li><a href="posts/2026-01-03-diary.html">1月3日の日記</a></li>
+</ul>
+</div>
+
+<div class="right-title">アーカイブ</div>
+<div class="link">
+<ul>
+<li><a href="archive/2026-01.html">2026年1月</a></li>
 </ul>
 </div>
 </aside>
-<footer>© 2026 一日一膳</footer>
-</div></body>
+
+<footer>© 2026 一日一膳 | <a href="https://github.com/username/username.github.io">GitHub</a></footer>
+</div>
+</body>
 </html>
