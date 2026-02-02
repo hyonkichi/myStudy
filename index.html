@@ -19,47 +19,59 @@
 <a href="idea.html">アプリ案</a>
 <a href="about.html">About</a>
 </nav>
+
+<!-- 検索バー -->
+<div class="search-container">
+<span class="search-icon">🔍</span>
+<input type="text" id="search-input" placeholder="記事を検索...">
+<div id="search-results"></div>
+</div>
 </header>
 
 <div id="content">
 <div class="inner">
 <!-- POSTS_START -->
-<article class="entry idea">
+<article class="entry idea" data-tags="">
 <h2><a href="posts/2026-01-04-app-idea-todo.html">シンプルなTodoアプリのアイデア</a></h2>
 <p class="date">2026年1月4日（土）</p>
 <p class="category">💡 アプリ案</p>
+
 <p>タスク管理アプリは色々あるけど、もっとシンプルで直感的なものを作りたい。...</p>
 <a href="posts/2026-01-04-app-idea-todo.html" class="read-more">続きを読む →</a>
 </article>
 
-<article class="entry">
+<article class="entry" data-tags="">
 <h2><a href="posts/2026-01-04-diary.html">ブログを始めた日</a></h2>
 <p class="date">2026年1月4日（土）</p>
 <p class="category">📝 日記</p>
+
 <p>今日からブログを始めた。GitHubで無料でホスティングできるのは便利だと思う。シンプルなHTMLで作っているので、更新も簡単そう。...</p>
 <a href="posts/2026-01-04-diary.html" class="read-more">続きを読む →</a>
 </article>
 
-<article class="entry">
+<article class="entry" data-tags="">
 <h2><a href="posts/2026-01-03-diary.html">正月休みも終わりに近づいて</a></h2>
 <p class="date">2026年1月3日（金）</p>
 <p class="category">📝 日記</p>
+
 <p>正月休みも終わりに近づいてきた。今年はもっとアウトプットを増やしたいと思っているので、このブログで記録を残していこう。...</p>
 <a href="posts/2026-01-03-diary.html" class="read-more">続きを読む →</a>
 </article>
 
-<article class="entry idea">
+<article class="entry idea" data-tags="">
 <h2><a href="posts/2026-01-02-app-idea-habit.html">習慣トラッカーアプリ</a></h2>
 <p class="date">2026年1月2日（木）</p>
 <p class="category">💡 アプリ案</p>
+
 <p>毎日の習慣を記録して可視化するアプリ。カレンダー形式で達成度を確認できる。...</p>
 <a href="posts/2026-01-02-app-idea-habit.html" class="read-more">続きを読む →</a>
 </article>
 
-<article class="entry">
+<article class="entry" data-tags="">
 <h2><a href="posts/2026-01-02-diary.html">ゆっくり過ごした一日</a></h2>
 <p class="date">2026年1月2日（木）</p>
 <p class="category">📝 日記</p>
+
 <p>今日は家でゆっくり過ごした。読書をしたり、散歩に出かけたり。たまにはこういう時間も必要だと思う。...</p>
 <a href="posts/2026-01-02-diary.html" class="read-more">続きを読む →</a>
 </article>
@@ -95,5 +107,8 @@
 
 <footer>© 2026 My Study | <a href="https://github.com/username/username.github.io">GitHub</a></footer>
 </div>
+
+<button id="dark-mode-toggle" aria-label="ダークモード切替"></button>
+<script src="main.js"></script>
 </body>
 </html>
