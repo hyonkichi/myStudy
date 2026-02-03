@@ -81,7 +81,7 @@ git push
    - 「Commit changes」をタップ
    - コミットメッセージを入力して確定
 
-> **注意**: スマホから投稿した場合、`build.js` が実行されないため、一覧ページには自動反映されません。PCで `node build.js` を実行するか、GitHub Actionsを設定する必要があります。
+> **自動ビルド**: GitHub Actionsが設定されているため、`posts/*.md` ファイルをプッシュすると自動的に `build.js` が実行され、一覧ページや検索インデックスが更新されます。
 
 ### 方法2: GitHub Mobile アプリ
 
