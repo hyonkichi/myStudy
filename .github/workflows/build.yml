@@ -14,6 +14,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -22,6 +24,23 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+
+      - name: Detect new articles
+        id: detect_new
+        run: |
+          # 前回のコミットと比較して新規追加されたmdファイルを検出
+          NEW_FILES=$(git diff --name-only --diff-filter=A HEAD~1 HEAD -- 'posts/*.md' 2>/dev/null || echo "")
+          if [ -n "$NEW_FILES" ]; then
+            echo "new_articles<<EOF" >> $GITHUB_OUTPUT
+            echo "$NEW_FILES" >> $GITHUB_OUTPUT
+            echo "EOF" >> $GITHUB_OUTPUT
+            echo "has_new=true" >> $GITHUB_OUTPUT
+            echo "検出された新規記事:"
+            echo "$NEW_FILES"
+          else
+            echo "has_new=false" >> $GITHUB_OUTPUT
+            echo "新規記事なし"
+          fi
 
       - name: Run build script
         run: node build.js
@@ -39,3 +58,13 @@ jobs:
           git add .
           git commit -m "Auto build: Update HTML and search index"
           git push
+
+      - name: Post to X
+        if: steps.detect_new.outputs.has_new == 'true'
+        env:
+          X_API_KEY: ${{ secrets.X_API_KEY }}
+          X_API_KEY_SECRET: ${{ secrets.X_API_KEY_SECRET }}
+          X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+          X_ACCESS_TOKEN_SECRET: ${{ secrets.X_ACCESS_TOKEN_SECRET }}
+          NEW_ARTICLES: ${{ steps.detect_new.outputs.new_articles }}
+        run: node scripts/post-to-x.js
