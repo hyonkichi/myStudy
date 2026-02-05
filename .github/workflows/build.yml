@@ -61,6 +61,7 @@ jobs:
 
       - name: Post to X
         if: steps.detect_new.outputs.has_new == 'true'
+        continue-on-error: true
         env:
           X_API_KEY: ${{ secrets.X_API_KEY }}
           X_API_KEY_SECRET: ${{ secrets.X_API_KEY_SECRET }}
