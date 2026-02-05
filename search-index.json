@@ -46,6 +46,18 @@
     "content": " X自動投稿テスト3 - My Study My Study 日記やら備忘録やら ホーム 日記一覧 アプリ案 About 2026年2月5日（水） 📝 日記 テスト X連携 X自動投稿テスト3 X自動投稿テスト3 X API連携の最終テストです。 ← 日記一覧に戻る カテゴリー 📝 日記 💡 アプリ案 © 2026 My Study | GitHub "
   },
   {
+    "title": "X自動投稿テスト4",
+    "url": "posts/2026-02-05-x-test4.html",
+    "date": "2026年2月5日（水）",
+    "category": "diary",
+    "tags": [
+      "テスト",
+      "X連携"
+    ],
+    "excerpt": "",
+    "content": " X自動投稿テスト4 - My Study My Study 日記やら備忘録やら ホーム 日記一覧 アプリ案 About 2026年2月5日（水） 📝 日記 テスト X連携 X自動投稿テスト4 X自動投稿テスト4 ワークフロー修正後の動作確認テストです。 ← 日記一覧に戻る カテゴリー 📝 日記 💡 アプリ案 © 2026 My Study | GitHub "
+  },
+  {
     "title": "\"[TEST] Claudeでブログ機能を強化した\"",
     "url": "posts/2026-02-03-diary.html",
     "date": "2026年2月3日（月）",
