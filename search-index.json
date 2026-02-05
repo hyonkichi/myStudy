@@ -21,6 +21,19 @@
     "content": " X自動投稿テスト - My Study My Study 日記やら備忘録やら ホーム 日記一覧 アプリ案 About 2026年2月5日（水） 📝 日記 テスト X連携 X自動投稿テスト X自動投稿テスト GitHub Actionsを使ったX自動投稿のテストです。 記事を追加すると、自動的にXに投稿される仕組みを構築しました。 ← 日記一覧に戻る カテゴリー 📝 日記 💡 アプリ案 © 2026 My Study | GitHub "
   },
   {
+    "title": "X自動投稿テスト2",
+    "url": "posts/2026-02-05-x-test2.html",
+    "date": "2026年2月5日（水）",
+    "category": "diary",
+    "tags": [
+      "テスト",
+      "X連携",
+      "自動化"
+    ],
+    "excerpt": "",
+    "content": " X自動投稿テスト2 - My Study My Study 日記やら備忘録やら ホーム 日記一覧 アプリ案 About 2026年2月5日（水） 📝 日記 テスト X連携 自動化 X自動投稿テスト2 X自動投稿テスト2 GitHub ActionsとX APIの連携テスト（2回目）です。 新しい記事を追加すると、自動的にXに通知が投稿されます。 ← 日記一覧に戻る カテゴリー 📝 日記 💡 アプリ案 © 2026 My Study | GitHub "
+  },
+  {
     "title": "\"[TEST] Claudeでブログ機能を強化した\"",
     "url": "posts/2026-02-03-diary.html",
     "date": "2026年2月3日（月）",
